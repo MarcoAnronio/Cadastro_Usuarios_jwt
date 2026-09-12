@@ -1,0 +1,27 @@
+{
+  "name": "crud-users-api",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "description": "API de cadastro de usuários com autenticação JWT e MySQL.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "test": "node --test",
+    "db:init": "node scripts/init-db.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.14.1",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.0"
+  }
+}
